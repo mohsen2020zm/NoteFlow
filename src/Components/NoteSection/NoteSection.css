@@ -1,0 +1,63 @@
+.note-section-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+.note-section-back-btn{
+    width: 1.8rem;
+    height: 1.8rem;
+    cursor: pointer;
+}
+.note-section-back-btn svg{
+    font-size: 1.8rem;
+    color: #6990d8;
+}
+.note-section-head-right-div{
+    display: flex;
+    align-items: center;
+}
+.note-section-save-btn, .note-section-del-btn{
+    width: 4rem;
+    height: 1.8rem;
+    background-color: #6990d8;
+    border: none;
+    border-radius: 10px;
+    color: #eeeeee;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.note-section-del-btn{
+    margin-right: 0.5rem;
+}
+.note-section-text{
+    width: 100%;
+    height: 100vh;
+    background-color: transparent;
+    border: none;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    color: var(--text-color);
+    padding: 0;
+    resize: none;
+    overflow-y: hidden;
+}
+
+@media only screen and (max-width: 768px){
+    .note-section-save-btn, .note-section-del-btn{
+        width: 3.6rem;
+        height: 1.6rem;
+        font-size: 0.9rem;
+    }
+    .note-section-back-btn{
+        width: 1.6rem;
+        height: 1.6rem;
+    }
+    .note-section-back-btn svg{
+        font-size: 1.6rem;
+    }
+    .note-section-text{
+        font-size: 1.1rem;
+        line-height: 1.7rem;
+    }
+}

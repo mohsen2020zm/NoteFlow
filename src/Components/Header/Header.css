@@ -1,0 +1,106 @@
+.header-main-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+.header-r-div{
+    display: flex;
+    align-items: center;
+}
+.header-add-btn{
+    width: 4rem;
+    height: 1.8rem;
+    background-color: #6990d8;
+    border: none;
+    border-radius: 10px;
+    color: #eeeeee;
+    font-size: 1rem;
+    margin-left: 0.5rem;
+    cursor: pointer;
+}
+.header-search-input-div{
+    width: 14rem;
+    height: 1.8rem;
+    border-radius: 10px;
+    background-color: var(--elems-color);
+    overflow: hidden;
+}
+.header-search-input-icon-div{
+    width: 2rem;
+    height: 1.8rem;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-search-input-icon-div svg{
+    font-size: 1.5rem;
+    color: #6990d8;
+}
+.header-search-input{
+    width: 11rem;
+    height: 1.8rem;
+    border: none;
+    background-color: var(--elems-color);
+    padding: 0rem 0.5rem 0 0.5rem;
+    font-family: tahoma;
+    color: var(--text-color);
+    font-size: 1rem;
+}
+.header-search-input::placeholder{
+    font-family: tahoma;
+    color: var(--text-color);
+    font-size: 1rem;
+}
+.d-l-div{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.d-l-div svg{
+    font-size: 2rem;
+    color: #6990d8;
+}
+
+@media only screen and (max-width: 768px){
+    .header-add-btn{
+        width: 3.6rem;
+        height: 1.6rem;
+        font-size: 0.9rem;
+    }
+    .header-search-input-div{
+        width: 12rem;
+        height: 1.6rem;
+    }
+    .header-search-input-icon-div{
+        height: 1.6rem;
+    }
+    .header-search-input-icon-div svg{
+        font-size: 1.4rem;
+    }
+    .header-search-input{
+        width: 9rem;
+        height: 1.6;
+        font-size: 0.9rem;
+    }
+    .header-search-input::placeholder{
+        font-size: 0.9rem;
+    }
+    .d-l-div{
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+    .d-l-div svg{
+        font-size: 1.8rem;
+    }
+}
+@media only screen and (max-width: 480px){
+    .header-search-input-div{
+        width: 10rem;
+    }
+    .header-search-input{
+        width: 7rem;
+    }
+}

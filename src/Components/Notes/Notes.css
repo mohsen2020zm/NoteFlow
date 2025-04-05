@@ -1,0 +1,15 @@
+.notes-main-div{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+@media only screen and (max-width: 768px){
+    .notes-main-div{
+        grid-template-columns: 33.3% 33.3% 33.3%;
+    }
+}
+@media only screen and (max-width: 480px){
+    .notes-main-div{
+        grid-template-columns: 50% 50%;
+    }
+}

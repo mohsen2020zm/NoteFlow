@@ -1,0 +1,66 @@
+.note-pre-main-div{
+    width: 14rem;
+    height: 10.5rem;
+    background-color: var(--elems-color);
+    border-radius: 10px;
+    margin: 0.5rem auto;
+    cursor: pointer;
+}
+.note-pre-value{
+    height: 7rem;
+    overflow: hidden;
+    font-size: 1rem;
+    color: var(--text-color);
+    overflow-wrap: break-word;
+    margin: 1rem 1rem 0.5rem 1rem;
+    position: relative;
+    z-index: 1;
+}
+.note-pre-date{
+    font-size: 1.1rem;
+    color: var(--text-color);
+    margin: 0 0 0 1rem;
+}
+.note-pre-shadow-div{
+    width: 14rem;
+    height: 8rem;
+    background: linear-gradient(to top, var(--elems-color), #00000000, #00000000, #00000000, #00000000, #00000000, #00000000, #00000000);
+    position: absolute;
+    z-index: 2;
+}
+
+@media only screen and (max-width: 992px){
+    .note-pre-main-div, .note-pre-shadow-div{
+        width: 9rem;
+    }
+}
+@media only screen and (max-width: 768px){
+    .note-pre-main-div{
+        width: 8.5rem;
+        height: 9.5rem;
+    }
+    .note-pre-shadow-div{
+        width: 8.5rem;
+        height: 7rem;
+    }
+    .note-pre-value{
+        height: 6rem;
+        font-size: 0.9rem;
+    }
+    .note-pre-date{
+        font-size: 1rem;
+    }
+}
+@media only screen and (max-width: 480px){
+    .note-pre-main-div, .note-pre-shadow-div{
+        width: 11rem;
+    }
+}
+@media only screen and (max-width: 400px){
+    .note-pre-main-div, .note-pre-shadow-div{
+        width: 8.5rem;
+    }
+    .note-pre-main-div{
+        margin: 0.3rem auto;
+    }
+}
