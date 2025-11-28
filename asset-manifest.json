@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/NoteFlow/static/css/main.d508a706.css",
-    "main.js": "/NoteFlow/static/js/main.e0aae702.js",
+    "main.css": "/NoteFlow/static/css/main.4c61fac6.css",
+    "main.js": "/NoteFlow/static/js/main.5db6e6df.js",
     "index.html": "/NoteFlow/index.html",
-    "main.d508a706.css.map": "/NoteFlow/static/css/main.d508a706.css.map",
-    "main.e0aae702.js.map": "/NoteFlow/static/js/main.e0aae702.js.map"
+    "main.4c61fac6.css.map": "/NoteFlow/static/css/main.4c61fac6.css.map",
+    "main.5db6e6df.js.map": "/NoteFlow/static/js/main.5db6e6df.js.map"
   },
   "entrypoints": [
-    "static/css/main.d508a706.css",
-    "static/js/main.e0aae702.js"
+    "static/css/main.4c61fac6.css",
+    "static/js/main.5db6e6df.js"
   ]
 }
