@@ -39,6 +39,13 @@ Then open your browser and go to `http://localhost:3000`.
 
 ---
 
+## 🌐 Live Demo
+```
+https://mohsen2020zm.github.io/NoteFlow
+```
+
+---
+
 ## 📄 License
 
 This project is licensed under the **MIT License** – feel free to use, modify, and share it.
