@@ -5,7 +5,7 @@ import Notes from '../Notes/Notes';
 import { useSelector } from 'react-redux'
 
 export default function Main() {
-
+    
     const selector = useSelector(state => state.note)
 
     return (

@@ -4,7 +4,7 @@ const noteSlice = createSlice({
     name: 'note',
     initialState: {
         showNote: false,
-        notes: JSON.parse(localStorage.getItem('nfnotes')),
+        notes: JSON.parse(localStorage.getItem('nfnotes')) || [],
         currentNote: {},
         massage: 'Add a note'
     },
