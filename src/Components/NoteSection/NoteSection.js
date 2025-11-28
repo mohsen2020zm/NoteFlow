@@ -32,7 +32,7 @@ export default function NoteSection() {
         dispatch(setNewNotes({
           newNote: {
             id: crypto.randomUUID(),
-            date: `${today.toLocaleDateString('en-US', {month: 'long'})} ${today.getDate()}, ${today.getFullYear()}`,
+            date: `${today.toLocaleDateString('en-US', {month: 'long'})} ${today.getDate()}`,
             text: note
           }
         }))
