@@ -20,7 +20,7 @@
 To run NoteFlow locally, follow these steps:
 
 ```bash
-git clone https://github.com/your-username/NoteFlow.git
+git clone https://github.com/mohsen2020zm/NoteFlow
 cd NoteFlow
 npm install
 npm start
