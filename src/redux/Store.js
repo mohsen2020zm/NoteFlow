@@ -6,7 +6,8 @@ const noteSlice = createSlice({
         showNote: false,
         notes: JSON.parse(localStorage.getItem('nfnotes')) || [],
         currentNote: {},
-        massage: 'Add a note'
+        message: 'Add a note',
+        selectedNotes: []
     },
     reducers: {
         setShowNote: (state, action) => {
@@ -37,12 +38,23 @@ const noteSlice = createSlice({
         searchNote: (state, action) => {
             state.notes = action.payload.searchedNotes
         },
-        setMassage: (state, action) => {
-            state.massage = action.payload.newMassage
+        setMessage: (state, action) => {
+            state.message = action.payload.newMessage
+        },
+        setSelect: (state, action) => {
+            state.selectedNotes.push(action.payload.newSelect)
+        },
+        setUnselect: (state, action) => {
+            state.selectedNotes = action.payload.newUnselect
+        },
+        deleteSelectedNotes: (state, action) => {
+            state.notes = action.payload.filteredSelectedNotes
+
+            localStorage.setItem('nfnotes', JSON.stringify(action.payload.filteredSelectedNotes))
         }
     }
 })
 
 export const Store = configureStore({reducer: {note: noteSlice.reducer}}) 
 
-export const {setShowNote, setNewNotes, setCurrentNote, editNote, deleteNote, searchNote, setMassage} = noteSlice.actions
+export const {setShowNote, setNewNotes, setCurrentNote, editNote, deleteNote, searchNote, setMessage, setSelect, setUnselect, deleteSelectedNotes} = noteSlice.actions

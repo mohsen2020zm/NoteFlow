@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+:root{
+  --bg-color: #dbe0eb;
+  --elems-color: #f4f8ff;
+  --text-color: #303438;
+}
+
+@theme {
+  --breakpoint-sm2: 400px;
+  --breakpoint-sm: 480px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+}
+
+@layer base {
+  body{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    font-family: tahoma;
+  }
+  input, input::placeholder{
+    font-family: tahoma;
+  }
+  input:focus, textarea:focus{
+  outline: none;
+  }
+  button{
+  font-family: tahoma;
+  }
+}
+
+@layer utilities {
+  .container{
+    @apply max-w-240 mx-auto px-4 max-lg:max-w-156 max-md:max-w-md max-sm:max-w-100 max-sm2:max-w-87.5
+  }
+  .check-box{
+    @apply w-5 h-5 appearance-none border-2 border-[#6990d8] checked:bg-[#6990d8] rounded-full cursor-pointer max-md:w-4 max-md:h-4
+  }
+  .bg-gradient{
+    @apply bg-linear-[to_top,var(--elems-color),#00000000_12.5%,#00000000_25%,#00000000_37.5%,#00000000_50%,#00000000_62.5%,#00000000_75%,#00000000_87.5%]
+  }
+}
+
+@layer components {
+  .btn{
+    @apply w-16 h-[1.8rem] bg-[#6990d8] border-none rounded-[10px] text-[#eeeeee] text-[1rem] cursor-pointer max-md:w-[3.6rem] max-md:h-[1.6rem] max-md:text-[0.9rem] max-sm2:text-[0.8rem] max-sm2:w-12 max-sm2:h-[1.4rem]
+  }
+}

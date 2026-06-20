@@ -1,58 +1,75 @@
-# 📝 NoteFlow
+# NoteFlow 📝
 
 **NoteFlow** is a simple and responsive note-taking web application built with **React.js**. It allows users to write, save, and manage their personal notes in an intuitive and organized way.
 
----
-
 ## 🚀 Features
 
-- 🖊️ Create, edit, and delete notes
-- 🗂️ Organize your thoughts in one place
-- 💾 Notes are saved instantly
-- 🌓 Clean and responsive design
-- 🎨 Intuitive UI with icons
-- ⚡️ Fast performance and smooth interactions
+* Create, edit, and delete notes
+* Clean and responsive design
+* Fast performance powered by Vite
+* State management with Redux
+* Modern UI styling with Tailwind CSS
+* Beautiful icons using React Icons
 
----
+## 🛠️ Technologies Used
 
-## 📦 Installation & Setup
+* React
+* Vite
+* Redux Toolkit / React Redux
+* Tailwind CSS
+* React Icons
+* JavaScript (ES6+)
 
-To run NoteFlow locally, follow these steps:
+## 📦 Installation
+
+Clone the repository:
 
 ```bash
 git clone https://github.com/mohsen2020zm/NoteFlow
+```
+
+Navigate to the project directory:
+
+```bash
 cd NoteFlow
+```
+
+Install dependencies:
+
+```bash
 npm install
-npm start
 ```
 
-Then open your browser and go to `http://localhost:3000`.
+Start the development server:
 
----
-
-## 🛠️ Built With
-
-- [React.js](https://reactjs.org/)
-- [React Redux](https://react-redux.js.org/) – for state management
-- [React Icons](https://react-icons.github.io/react-icons/) – for icons
-- HTML5 & CSS3
-
----
-
-## 🌐 Live Demo
-```
-https://mohsen2020zm.github.io/NoteFlow
+```bash
+npm run dev
 ```
 
----
+## 🔧 Available Scripts
 
-## 📄 License
+Run the development server:
 
-This project is licensed under the **MIT License** – feel free to use, modify, and share it.
+```bash
+npm run dev
+```
 
----
+Build the project for production:
+
+```bash
+npm run build
+```
+
+Preview the production build:
+
+```bash
+npm run preview
+```
 
 ## 🤝 Contributing
 
-Contributions and suggestions are welcome!  
-Please open an issue to discuss any changes or new features you'd like to add.
+Contributions, issues, and feature requests are welcome.
+
+## 📄 License
+
+This project is licensed under the MIT License.

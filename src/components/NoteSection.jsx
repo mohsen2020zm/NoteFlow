@@ -1,11 +1,10 @@
-import './NoteSection.css'
 import { IoMdArrowRoundBack } from "react-icons/io";
 import { useDispatch, useSelector } from 'react-redux'
-import { setShowNote, setNewNotes, setCurrentNote, editNote, deleteNote } from '../../Store'
-import { useState } from 'react';
+import { setShowNote, setNewNotes, setCurrentNote, editNote, deleteNote } from '../redux/Store'
+import { useEffect, useState } from 'react';
 
 export default function NoteSection() {
-
+  
   const dispatch = useDispatch()
   const selector = useSelector(state => state.note)
   
@@ -13,11 +12,12 @@ export default function NoteSection() {
   const [isSave, setIsSave] = useState(true)
 
   const today = new Date()
-  
+
   const setNoteHandler = e => {
     setIsSave(false)
     setNote(e.target.value)
   }
+
   const backHandler = () => {
     dispatch(setShowNote({show: false}))
     dispatch(setCurrentNote({currNote: {}}))
@@ -49,16 +49,16 @@ export default function NoteSection() {
 
   return (
     <div className='container'>
-      <div className='note-section-header'>
-        <div className="note-section-back-btn" onClick={() => backHandler()}>
+      <div className='flex items-center justify-between my-4 max-sm2:my-3'>
+        <div className="w-8 h-8 cursor-pointer [&>svg]:text-[2rem] text-[#6990d8] max-md:w-[1.8rem] max-md:h-[1.8rem] max-md:[&>svg]:text-[1.8rem] max-sm2:w-[1.6rem] max-sm2:h-[1.6rem] max-sm2:[&>svg]:text-[1.6rem]" onClick={backHandler}>
           <IoMdArrowRoundBack />
         </div>
-        <div className="note-section-head-right-div">
-          <button className="note-section-del-btn" onClick={() => deleteHandler()}>Delete</button>
-          <button className="note-section-save-btn" onClick={() => saveHandler()}>Save{isSave || '*'}</button>
+        <div className="flex items-center">
+          <button className="btn mr-2" onClick={deleteHandler}>Delete</button>
+          <button className="btn" onClick={saveHandler}>Save{isSave || '*'}</button>
         </div>
       </div>
-      <textarea className='note-section-text' autoFocus value={note} onChange={e => setNoteHandler(e)}></textarea>
+      <textarea className='w-full h-screen bg-transparent border-none text-[1.3rem] leading-8 text-(--text-color) p-0 resize-none overflow-y-hidden max-md:text-[1.1rem] max-md:leading-[1.7rem] max-sm2:text-[0.9rem]' autoFocus value={note} onChange={setNoteHandler}></textarea>
     </div>
   )
 }
