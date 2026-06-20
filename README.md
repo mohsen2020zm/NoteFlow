@@ -66,6 +66,10 @@ Preview the production build:
 npm run preview
 ```
 
+## 🌐 Live Demo
+
+https://mohsen2020zm.github.io/NoteFlow
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome.
